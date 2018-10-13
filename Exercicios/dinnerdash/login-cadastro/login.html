@@ -11,26 +11,20 @@
 <body>
     <div class="container">
         <div class="boxLeft">
-            <img src="Imagens/sabri-tuzcu-365440.jpg" alt="OMG! Não acredito que a imagem não carregou! :´(">
+            <img class="imgFront" src="img/sabri-tuzcu-365440.jpg" alt="OMG! Não acredito que a imagem não carregou! :´(">
         </div>
         <div class="boxRight">
-            <div class="boxRightTop">
-                <h1 class="title">dinnerdash</h1>
-            </div>
-            <div class="boxRightMid">
-                <form method="POST">
-                    <p class="loginText">E-mail</p>
-                    <input type="text" name="email"><br>
-                    <p class="loginText">Senha</p>
-                    <input type="password" name="psw"><br>
-                    <input type="submit" value="fazer login">
-                </form>
-            </div>
+            <h1 class="title">dinnerdash</h1>
 
-            <div class="boxRighBottom">
-                <p class="noAccount">Não possui conta?</p>
-                <p class="signUpButton">fazer meu cadastro</p>
-            </div>
+            <form method="POST" class="formPadding">
+                <p class="loginText">E-mail</p>
+                <input type="text" name="email"><br>
+                <p class="loginText">Senha</p>
+                <input type="password" name="psw"><br>
+                <input type="submit" value="fazer login">
+            </form>
+            <p id="noAccount" class="loginText">Não possui conta?</p>
+            <a href="cadastro.html" class="signUpButton">fazer meu cadastro</a>
 
         </div>
     </div>
