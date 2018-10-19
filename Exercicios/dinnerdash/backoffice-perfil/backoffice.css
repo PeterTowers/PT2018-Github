@@ -1,0 +1,133 @@
+.justifyContentRight {
+    justify-content: flex-end;
+}
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.imgTop {
+    background: #ffffff url("img/helloquence-61189.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #a9a9a9;
+    background-blend-mode: multiply;
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.textTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    height: 20%;
+}
+
+.title {
+    font-family: fontAmaranth;
+    font-size: xx-large;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pages {
+    width: 12%;
+}
+
+.pagesText {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: medium;
+    padding: 5%;
+}
+
+#backoffice.pagesText {
+    color: gold;
+    font-weight: bold;
+}
+
+.pagesText:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.descriptionText {
+    padding-bottom: 1.5em;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.midBox {
+    width: 90%;
+    height: auto;
+    padding-top: 5%; 
+}
+
+.navbarWidth {
+    margin-left: 6.75%;
+}
+
+.boxCancelado {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #E82431;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.boxEntregue {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #28A745;
+    color:  #FFFFFF;
+    text-align: center;
+}
+
+.boxPendente {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.verItens {
+    width: 20%;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.editar {
+    width: 10%;
+    color: #FDDF4C;
+    font-weight: bold;
+}
+
+.excluir {
+    width: 10%;
+    color: #E82431;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: fontAmaranth;
+    src: url(https://fonts.gstatic.com/s/amaranth/v8/KtkuALODe433f0j1zMnFHdA.woff2);
+}
