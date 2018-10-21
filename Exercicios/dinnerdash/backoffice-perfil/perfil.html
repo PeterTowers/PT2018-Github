@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>dinnerdash - meu perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="perfil.css" />
+</head>
+
+<body>
+    <div class="containerImg imgTop">
+        <div class="containerTopText">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand title" href="#">dinnerdash</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link pagesText" href="#">perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagesText" href="#">sair </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="descriptionText">
+                <h1 id="meuPerfil">Meu perfil</h1>
+                <h3>Atualizar meus dados pessoas e senha</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="midBox">
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control w-100" id="inputNome" placeholder="Imagine seu belo nome aqui ;)">
+                        
+                        <label class="mt-4" for="inputPsw">Nova senha (deixe em branco caso não queira alterar)</label>
+                        <input type="password" class="form-control w-100" id="inputPsw" placeholder="12345678 não é uma boa senha...">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail">E-mail</label>
+                        <input type="email" class="form-control w-100" id="inputEmail" placeholder="seu_e-mail@exemplo.com">
+                        
+                        <label class="mt-4" for="inputCurrentPsw">Senha atual, por questão de segurança</label>
+                        <input type="password" class="form-control w-100" id="inputCurrentPsw">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success w-25 mt-4">atualizar meu perfil</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="footerTextLeft">
+                <h5>dinnerdash | todos os direitos reservados</h5>
+            </div>
+
+            <div class="footerTextRight">
+                <p>desenvolvido por Pedro Torres
+                    <!--(um trainee da Silva XD)-->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
