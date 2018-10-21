@@ -8,6 +8,7 @@ html {
 
 body {
     position: relative;
+    height: 100%;
     min-height: 100%;
     padding-bottom: 5%;
 }
@@ -25,7 +26,7 @@ h5, p {
 }
 
 .imgTop {
-    background: #ffffff url("img/helloquence-61189.jpg") no-repeat center;
+    background: #dddddd url("img/helloquence-61189.jpg") no-repeat center;
     background-size: cover;
     background-color: #a9a9a9;
     background-blend-mode: multiply;
@@ -50,11 +51,6 @@ h5, p {
     text-decoration: none;
 }
 
-.pages {
-    text-justify: end;
-    width: 13.635em;
-}
-
 .pagesText {
     color: #ffffff;
     text-decoration: none;
@@ -62,7 +58,7 @@ h5, p {
 }
 
 #backoffice.pagesText {
-    color: gold;
+    color: #ffd700;
     font-weight: bold;
 }
 
@@ -74,6 +70,11 @@ h5, p {
 .descriptionText {
     padding-bottom: 1.5em;
     color: #ffffff;
+    font-family: Roboto;
+}
+
+h1#bo {
+    font-size: 425%;
 }
 
 .container {
@@ -89,7 +90,7 @@ h5, p {
     padding-top: 5%; 
 }
 
-.navbarWidth {
+.navbarMargin {
     margin-left: 6.75%;
 }
 
@@ -164,4 +165,9 @@ h5, p {
 @font-face {
     font-family: fontAmaranth;
     src: url(https://fonts.gstatic.com/s/amaranth/v8/KtkuALODe433f0j1zMnFHdA.woff2);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2);
 }
