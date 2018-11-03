@@ -54,71 +54,62 @@ class Refeicao
         end
     end
 
-    def setDisponibilidade()
-        if @dispo
+    # ---------- Metodo setDisponibilidade ----------
+    def setDisponibilidade  # Altera a disponibilidade do prato
+        if @dispo           # Se o prato esta inicialmente disponivel (true), define como indisponivel (false)
             @dispo = false
-        else
+        else                # Caso contrario, define o prato como disponivel
             @dispo = true
         end
     end
 
-    def getDisponibilidade()
-        if @dispo
-            puts "Disponivel"
-        else
-            puts "Indisponivel"
+    # ---------- Metodo getDisponibilidade ----------
+    def getDisponibilidade  # Retorna a disponibilidade do prato de acordo com os parametros acima
+        if @dispo           # dispo == true, prato disponivel
+            "Disponivel"
+        else                # dispo == false, indisponivel
+            "Indisponivel"
         end
     end
 
-    def getDescricao()
-        puts @descricao
+    # ---------- Metodo getDescricao ----------
+    def getDescricao    # Retorna a descricao do prato
+        @descricao
     end
 
-    def setDescricao(new_descricao)
+    # ---------- Metodo setDescricao ----------
+    def setDescricao(new_descricao) # Atribui uma nova descricao ao prato
         @descricao = new_descricao
     end
 
-    def getPreco()
-        puts "R$ %0.2f" % [@preco]
+    # ---------- Metodo getPreco ----------
+    def getPreco    # Retorna o preco do prato
+        "R$ %0.2f" % [@preco]
     end
 
-    def setPreco(new_preco)
+    # ---------- Metodo setPreco ----------
+    def setPreco(new_preco) # Atribui um novo preco ao prato
         @preco = BigDecimal(new_preco, 2)
     end
 
-    def getTipo()
-        puts @tipo
+    # ---------- Metodo getTipo ----------
+    def getTipo()   # Retorna o tipo do prato
+        @tipo
     end
 
-    def setTipo(new_tipo)
+    # ---------- Metodo setTipo ----------
+    def setTipo(new_tipo)   # Atribui um novo tipo ao prato
         @tipo = new_tipo
     end
 
-    def getNum
-        puts @@numPratos
+    # ---------- Metodo getNum ----------
+    def getNum  # Retorna o numero de vezes que a classe foi instanciada (numero de pratos vendidos)
+        @@numPratos
     end
 
-    def getTotal
-        puts "R$ %0.2f" % [@@total]
+    # ---------- Metodo getTotal ----------
+    def getTotal    # Retorna o montante de todas as refeicoes vendidas
+        "R$ %0.2f" % [@@total]
     end
 
 end
-
-mac = Refeicao.new("macarrao")
-mac.getTotal
-las = Refeicao.new("lasanha")
-las.getTotal
-fil = Refeicao.new("file miau")
-fil.getTotal
-fra = Refeicao.new("frango do RU")
-fra.getTotal
-err = Refeicao.new("coc au vin")
-err.getTotal
-
-mac.getDescricao
-las.setDisponibilidade
-las.getDisponibilidade
-fil.getDescricao
-fra.setPreco(2.5)
-fra.getPreco
-err.getDescricao
